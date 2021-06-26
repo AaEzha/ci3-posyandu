@@ -47,16 +47,23 @@
         <li class="nav-item">
           <a class="nav-link" style="color: #ffffff " href="<?= base_url(); ?>Profil">Profil Pengguna</a>
         </li>
+				<?php if(! isset($this->session->username)) { ?>
+				<!-- Login -->
+        <li class="nav-item">
+          <a class="nav-link" style="color: #ffffff " href="<?= base_url('auth'); ?>">Login</a>
+        </li>
+				<?php }else{ ?>
         <!-- 4 -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" style="color: #ffffff " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Opsi Akun
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Keluar Akun</a></li>
+            <li><a class="dropdown-item" href="<?= base_url('auth/logout'); ?>">Keluar Akun</a></li>
             <li><a class="dropdown-item" href="<?= base_url(); ?>Register">Tambahkan Akun</a></li>
           </ul>
         </li>
+				<?php } ?>
       </ul>
     </div>
   </div>
