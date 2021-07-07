@@ -3,7 +3,7 @@
 <br>
 
 <!-- Text -->
-<h2 class="text-center"> Data Penduduk Datang </h2><hr><p></p>
+<h2 class="text-center"> Data Penduduk Pindah </h2><hr><p></p>
 
 <!-- Flex -->
 <div class="d-flex justify-content-between">

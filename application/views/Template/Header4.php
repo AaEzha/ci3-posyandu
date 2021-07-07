@@ -53,7 +53,7 @@
         </li>
         <!-- 4 -->
         <li class="nav-item">
-          <a class="nav-link" style="color: #ffffff " href="<?= base_url(); ?>kawin">Perkawinan</a>
+          <a class="nav-link" style="color: #ffffff " href="<?= base_url(); ?>Kawin">Perkawinan</a>
         </li>
         <!-- 5 -->
         <li class="nav-item">
@@ -83,12 +83,12 @@
             Laporan Kegiatan
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="<?= base_url(); ?>LaporanIbuHamil">Laporan Data Akseptor</a></li>
-            <li><a class="dropdown-item" href="<?= base_url(); ?>LaporanPengecekan">Laporan Data Ibu Melahirkan</a></li>
-            <li><a class="dropdown-item" href="<?= base_url(); ?>LaporanVitamin">Laporan Data Perkawinan</a></li>
-            <li><a class="dropdown-item" href="<?= base_url(); ?>LaporanVitamin">Laporan Data Kematian</a></li>
-            <li><a class="dropdown-item" href="<?= base_url(); ?>LaporanVitamin">Laporan Data Penduduk Datang</a></li>
-            <li><a class="dropdown-item" href="<?= base_url(); ?>LaporanVitamin">Laporan Data Penduduk Pindah</a></li>
+            <li><a class="dropdown-item" href="<?= base_url(); ?>Laporan/Akseptor">Laporan Data Akseptor</a></li>
+            <li><a class="dropdown-item" href="<?= base_url(); ?>Laporan/Persalinan">Laporan Data Ibu Melahirkan</a></li>
+            <li><a class="dropdown-item" href="<?= base_url(); ?>Laporan/Perkawinan">Laporan Data Perkawinan</a></li>
+            <li><a class="dropdown-item" href="<?= base_url(); ?>Laporan/Kematian">Laporan Data Kematian</a></li>
+            <li><a class="dropdown-item" href="<?= base_url(); ?>Laporan/Datang">Laporan Data Penduduk Datang</a></li>
+            <li><a class="dropdown-item" href="<?= base_url(); ?>Laporan/Pindah">Laporan Data Penduduk Pindah</a></li>
           </ul>
         </li>
 				<!-- <li class="nav-item dropdown">

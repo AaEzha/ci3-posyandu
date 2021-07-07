@@ -62,6 +62,7 @@ class Akseptor extends CI_Controller
 		$this->form_validation->set_rules('Tempat_Pelkon', 'Tempat Pelkon', 'required');
 
 		if ($this->form_validation->run() == FALSE) {
+			$data['js'] = "Akseptor/js";
 			$this->load->view('Template/Header4');
 			$this->load->view('Akseptor/Edit', $data);
 			$this->load->view('Template/Footer4');

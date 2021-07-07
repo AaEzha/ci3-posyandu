@@ -155,7 +155,7 @@
 							<!-- Button -->
 							<br><br><br><br>
 							<div class="d-grid gap-2 d-md-flex justify-content-md-end">
-								<a class="btn " style="background-color:#B1C695" href="<?= base_url(); ?>Akseptor" role="button">Kembali</a>
+								<a class="btn " style="background-color:#B1C695" href="<?= base_url(); ?>Lahir" role="button">Kembali</a>
 								<button type="submit" name="tambah" style="background-color:#5894C6" class="btn btn-primary"> Simpan Data </button>
 							</div>
 							<!-- Penutup Sub Sub Card 3 -->

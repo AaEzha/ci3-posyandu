@@ -1,6 +1,6 @@
 <!-- Container -->
 <div class="container"><br>
-	<h2 class="text-center"> Form Peubahan Data Perkawinan</h2>
+	<h2 class="text-center"> Detail Data Perkawinan</h2>
 	<hr class="mx-auto" width="35%"><BR>
 
 	<!-- Card 1 -->
@@ -16,49 +16,42 @@
 							<h6 class="card-title text-center">DATA DIRI SUAMI</h6>
 							<hr class="mx-auto" width="40%">
 							<!-- Form Pembuka -->
-							<form action="" method="post">
-								<input type="hidden" class="form-control form-control-sm" name="Id_Kawin" value="<?= $id; ?>" readonly>
-								<div class="mb-3">
-									<label for="Nik_Suami" class="form-label">NIK Suami</label>
-									<input type="text" class="form-control form-control-sm" name="Nik_Suami" onchange="suami(this.value)">
-									<small class="form-text text-danger"><?= form_error('Nik_Suami') ?></small>
-								</div>
-								<!-- Nama Suami -->
-								<div class="mb-3">
-									<label for="Nama Suami" class="form-label">Nama Suami</label>
-									<input type="text" class="form-control form-control-sm" name="Nama_Suami" id="Nama_Suami" value="<?= $data->Nama_Suami; ?>" readonly>
-									<small class="form-text text-danger"><?= form_error('Nama_Suami') ?></small>
-								</div>
-								<!-- Tanggal Lahir -->
-								<div class="row">
-									<div class="col-md-6">
-										<div class="mb-3 ">
-											<label for="Tanggal Lahir">Tanggal Lahir</label>
-											<input type="date" class="form-control form-control-sm" name="Tanggal_Lahir_Suami" id="Tanggal_Lahir_Suami" value="<?= $data->Tanggal_Lahir_Suami; ?>" readonly>
-										</div>
-									</div>
-									<!-- Umur -->
-									<div class="col-md-6">
-										<div class="mb-3">
-											<label for="Umur Suami"> Umur</label>
-											<input type="text" name="Umur_Suami" class="form-control form-control-sm" id="Umur_Suami" value="<?= $data->Umur_Suami; ?>" readonly>
-											<small class="form-text text-danger"><?= form_error('Umur_Suami') ?></small>
-										</div>
+							<!-- Nama Suami -->
+							<div class="mb-3">
+								<label for="Nama Suami" class="form-label">Nama Suami</label>
+								<input type="text" class="form-control form-control-sm" name="Nama_Suami" id="Nama_Suami" value="<?= $data->Nama_Suami; ?>" readonly>
+								<small class="form-text text-danger"><?= form_error('Nama_Suami') ?></small>
+							</div>
+							<!-- Tanggal Lahir -->
+							<div class="row">
+								<div class="col-md-6">
+									<div class="mb-3 ">
+										<label for="Tanggal Lahir">Tanggal Lahir</label>
+										<input type="date" class="form-control form-control-sm" name="Tanggal_Lahir_Suami" id="Tanggal_Lahir_Suami" value="<?= $data->Tanggal_Lahir_Suami; ?>" readonly>
 									</div>
 								</div>
-								<!-- Pendidikan -->
-								<div class="mb-3 ">
-									<label for="Pendidikan ">Pendidikan</label>
-									<input type="text" name="Pendidikan_Suami" class="form-control form-control-sm" id="Pendidikan_Suami" value="<?= $data->Pendidikan_Suami; ?>" readonly>
-									<small class="form-text text-danger"><?= form_error('Pendidikan_Suami') ?></small>
+								<!-- Umur -->
+								<div class="col-md-6">
+									<div class="mb-3">
+										<label for="Umur Suami"> Umur</label>
+										<input type="text" name="Umur_Suami" class="form-control form-control-sm" id="Umur_Suami" value="<?= $data->Umur_Suami; ?>" readonly>
+										<small class="form-text text-danger"><?= form_error('Umur_Suami') ?></small>
+									</div>
 								</div>
-								<!-- Pekerjaan -->
-								<div class="mb-3">
-									<label for="Pekerjaan"> Pekerjaan</label>
-									<input type="text" name="Pekerjaan_Suami" class="form-control form-control-sm" id="Pekerjaan_Suami" value="<?= $data->Pekerjaan_Suami; ?>" readonly>
-									<small class="form-text text-danger"><?= form_error('Pekerjaan_Suami') ?></small>
-								</div>
-								<!-- Penutup Sub car 1 -->
+							</div>
+							<!-- Pendidikan -->
+							<div class="mb-3 ">
+								<label for="Pendidikan ">Pendidikan</label>
+								<input type="text" name="Pendidikan_Suami" class="form-control form-control-sm" id="Pendidikan_Suami" value="<?= $data->Pendidikan_Suami; ?>" readonly>
+								<small class="form-text text-danger"><?= form_error('Pendidikan_Suami') ?></small>
+							</div>
+							<!-- Pekerjaan -->
+							<div class="mb-3">
+								<label for="Pekerjaan"> Pekerjaan</label>
+								<input type="text" name="Pekerjaan_Suami" class="form-control form-control-sm" id="Pekerjaan_Suami" value="<?= $data->Pekerjaan_Suami; ?>" readonly>
+								<small class="form-text text-danger"><?= form_error('Pekerjaan_Suami') ?></small>
+							</div>
+							<!-- Penutup Sub car 1 -->
 						</div>
 					</div>
 				</div>
@@ -148,11 +141,6 @@
 							<!-- Form Pembuka -->
 							<form action="" method="post">
 								<!-- Nama Suami -->
-								<div class="mb-3">
-									<label for="NIK_Istri" class="form-label">NIK Istri</label>
-									<input type="text" class="form-control form-control-sm" name="NIK_Istri" id="NIK_Istri" onchange="istri(this.value)">
-									<small class="form-text text-danger"><?= form_error('NIK_Istri') ?></small>
-								</div>
 								<div class="mb-3">
 									<label for="Nama_Istri" class="form-label">Nama Istri</label>
 									<input type="text" class="form-control form-control-sm" name="Nama_Istri" id="Nama_Istri" readonly value="<?= $data->Nama_Istri; ?>">
@@ -266,12 +254,10 @@
 			<!-- Button -->
 			<div class="d-grid gap-2 d-md-flex justify-content-md-end">
 				<a class="btn md-end " style="background-color:#B1C695" href="<?= base_url(); ?>Kawin" role="button">Kembali</a>
-				<button type="submit" name="tambah" style="background-color:#5894C6" class="btn md-end text-white"> Simpan Data </button>
 			</div>
 			<!-- Penutup Card 1 -->
 		</div>
 	</div><br>
-	</form>
 
 	<!--Penutup Div -->
 </div>

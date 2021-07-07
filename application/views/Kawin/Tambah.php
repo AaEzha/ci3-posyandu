@@ -50,7 +50,7 @@
 								<div class="mb-3 ">
 									<label for="Pendidikan ">Pendidikan</label>
 									<input type="text" name="Pendidikan_Suami" class="form-control form-control-sm" id="Pendidikan_Suami" readonly>
-											<small class="form-text text-danger"><?= form_error('Pendidikan_Suami') ?></small>
+									<small class="form-text text-danger"><?= form_error('Pendidikan_Suami') ?></small>
 								</div>
 								<!-- Pekerjaan -->
 								<div class="mb-3">
@@ -179,7 +179,7 @@
 								<div class="mb-3 ">
 									<label for="Pendidikan ">Pendidikan</label>
 									<input type="text" name="Pendidikan_Istri" class="form-control form-control-sm" id="Pendidikan_Istri" readonly>
-											<small class="form-text text-danger"><?= form_error('Pendidikan_Istri') ?></small>
+									<small class="form-text text-danger"><?= form_error('Pendidikan_Istri') ?></small>
 								</div>
 								<!-- Pekerjaan -->
 								<div class="mb-3">
@@ -265,7 +265,7 @@
 			</div><br><br>
 			<!-- Button -->
 			<div class="d-grid gap-2 d-md-flex justify-content-md-end">
-				<a class="btn md-end " style="background-color:#B1C695" href="<?= base_url(); ?>Akseptor" role="button">Kembali</a>
+				<a class="btn md-end " style="background-color:#B1C695" href="<?= base_url(); ?>Kawin" role="button">Kembali</a>
 				<button type="submit" name="tambah" style="background-color:#5894C6" class="btn md-end text-white"> Simpan Data </button>
 			</div>
 			<!-- Penutup Card 1 -->

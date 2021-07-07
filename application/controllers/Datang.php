@@ -7,6 +7,7 @@ class Datang extends CI_Controller
 	{
 		parent::__construct();
 		is_logged_in(4);
+		$this->load->model('Mdatang');
 	}
 
 	// Index Home
@@ -39,9 +40,10 @@ class Datang extends CI_Controller
 		$this->form_validation->set_rules('Ks', 'Anak Ke-', 'required');
 
 		if ($this->form_validation->run() == FALSE) {
+			$data['js'] = "Datang/js";
 			$this->load->view('Template/Header4');
 			$this->load->view('Datang/Tambah', $data);
-			$this->load->view('Template/Footer4');
+			$this->load->view('Template/Footer4', $data);
 		} else {
 			$this->Datang_Model->tambah();
 			redirect('datang');
@@ -58,7 +60,6 @@ class Datang extends CI_Controller
 	// Edit
 	public function edit($id)
 	{
-		$data['datang'] = $this->Datang_Model->getdatadetail($id);
 		$this->form_validation->set_rules('Nama_KK', 'Nama Vitamin', 'required');
 		$this->form_validation->set_rules('Umur_KK', 'Nama Istri', 'required');
 		$this->form_validation->set_rules('Nama_Istri', 'Umur Istri', 'required');
@@ -72,12 +73,23 @@ class Datang extends CI_Controller
 
 
 		if ($this->form_validation->run() == FALSE) {
-			$this->load->view('Template/Header2');
-			$this->load->view('Vitamin/Edit', $data);
-			$this->load->view('Template/Footer2');
+			$data['id'] = $id;
+			$data['data'] = Mdatang::find($id);
+			$data['js'] = "Datang/js";
+			$this->load->view('Template/Header4');
+			$this->load->view('Datang/Edit', $data);
+			$this->load->view('Template/Footer4', $data);
 		} else {
-			$this->Vitamin_Model->ubahVitamin();
-			redirect('Vitamin');
+			$this->Datang_Model->edit();
+			redirect('datang');
 		}
+	}
+
+	public function detail($id)
+	{
+		$data['data'] = Mdatang::find($id);
+		$this->load->view('Template/Header4');
+		$this->load->view('Datang/Detail', $data);
+		$this->load->view('Template/Footer4', $data);
 	}
 }

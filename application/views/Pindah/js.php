@@ -9,17 +9,8 @@
 			},
 			dataType: 'json',
 			success: function(data) {
-				$('#Nama_Suami').val(data.Nama)
-				$('#Tanggal_Lahir_Suami').val(data.Tanggal_Lahir)
-				$('#Pendidikan_Suami').val(data.Pendidikan)
-				$('#Pekerjaan_Suami').val(data.Pekerjaan)
-				$('#Alamat_Suami').val(data.Alamat)
-				$('#Rt_Suami').val(data.Rt)
-				$('#Rw_Suami').val(data.Rw)
-				$('#Desa_Suami').val(data.Desa)
-				$('#Kecamatan_Suami').val(data.Kecamatan)
-				$('#Kabupaten_Suami').val(data.Kabupaten)
-				$('#Provinsi_Suami').val(data.Provinsi)
+				$('#Nama_KK_Pindah').val(data.Nama)
+				$('#Tanggal_Lahir_KK_Pindah').val(data.Tanggal_Lahir)
 			},
 			error: function(res) {
 				console.error(res.responseText);
@@ -33,7 +24,7 @@
 			},
 			dataType: 'json',
 			success: function(data) {
-				$('#Umur_Suami').val(data)
+				$('#Umur_KK_Pindah').val(data)
 			},
 			error: function(res) {
 				console.error(res.responseText);
@@ -50,17 +41,8 @@
 			},
 			dataType: 'json',
 			success: function(data) {
-				$('#Nama_Istri').val(data.Nama)
-				$('#Tanggal_Lahir_Istri').val(data.Tanggal_Lahir)
-				$('#Pendidikan_Istri').val(data.Pendidikan)
-				$('#Pekerjaan_Istri').val(data.Pekerjaan)
-				$('#Alamat_Istri').val(data.Alamat)
-				$('#Rt_Istri').val(data.Rt)
-				$('#Rw_Istri').val(data.Rw)
-				$('#Desa_Istri').val(data.Desa)
-				$('#Kecamatan_Istri').val(data.Kecamatan)
-				$('#Kabupaten_Istri').val(data.Kabupaten)
-				$('#Provinsi_Istri').val(data.Provinsi)
+				$('#Nama_Istri_Pindah').val(data.Nama)
+				$('#Tanggal_Lahir_Istri_Pindah').val(data.Tanggal_Lahir)
 			},
 			error: function(res) {
 				console.error(res.responseText);
@@ -74,7 +56,7 @@
 			},
 			dataType: 'json',
 			success: function(data) {
-				$('#Umur_Istri').val(data)
+				$('#Umur_Istri_Pindah').val(data)
 			},
 			error: function(res) {
 				console.error(res.responseText);
