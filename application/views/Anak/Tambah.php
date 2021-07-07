@@ -70,16 +70,16 @@
 
         <!-- Nama Ibu -->
         <div class="mb-3">
-        <label for="Nama_Ibu">Nama Ibu</label>
-        <input type="text" name="Nama_Ibu" class="form-control" id="Nama_Ibu">
-        <small  class="form-text text-danger"><?= form_error('Nama_Ibu') ?></small>
+        <label for="nik_ibu">NIK Ibu</label>
+        <input type="text" name="nik_ibu" class="form-control" id="nik_ibu">
+        <small  class="form-text text-danger"><?= form_error('nik_ibu') ?></small>
         </div>
 
         <!-- Nama Ayah -->
         <div class="mb-3">
-        <label for="Nama_Ayah">Nama Ayah</label>
-        <input type="text" name="Nama_Ayah" class="form-control" id="Nama_Ayah">
-        <small  class="form-text text-danger"><?= form_error('Nama_Ayah') ?></small>
+        <label for="nik_ayah">NIK Ayah</label>
+        <input type="text" name="nik_ayah" class="form-control" id="nik_ayah">
+        <small  class="form-text text-danger"><?= form_error('nik_ayah') ?></small>
         </div>
         
 

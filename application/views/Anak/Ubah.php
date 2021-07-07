@@ -59,11 +59,11 @@
         </div>
 
          <!-- Umur -->
-         <div class="mb-3">
+         <!-- <div class="mb-3">
         <label for="Umur">Umur</label>
         <input type="text" name="Umur" class="form-control" id="Umur" value="<?= $anak['Umur']?>">
         <small  class="form-text text-danger"><?= form_error('Umur') ?></small>
-        </div>
+        </div> -->
 
         <!-- Nama Ibu -->
         <div class="mb-3">

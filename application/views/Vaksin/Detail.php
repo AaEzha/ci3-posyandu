@@ -1,5 +1,5 @@
 <!-- Container -->
-<div class="container">
+<div class="container" id="printableArea">
 <br>
 
 <!-- Text -->
@@ -21,7 +21,7 @@
                 <td><?= $vaksin['Nama_Vaksin']; ?></td>
                 </tr>
                 <tr>
-                <th scope="row"> Jenis Kelamin</th>
+                <th scope="row"> Usia Wajib Vaksin</th>
                 <td>:</td>
                 <td><?= $vaksin['Usia_Wajib_Vaksin']; ?></td>
                 </tr>
@@ -29,7 +29,7 @@
         </table><br>
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
         <a href="<?= base_url(); ?>Vaksin" class="btn btn-sm btn-primary float-right">KEMBALI</a>
-            <a href="#" class="btn btn-sm btn-warning float-left" role="button">CETAK DATA</a>
+            <a href="#" class="btn btn-sm btn-warning float-left" onclick="printDiv('printableArea')" role="button">CETAK DATA</a>
         </div>
   </div>
 

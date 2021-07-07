@@ -1,5 +1,5 @@
 <!-- Container -->
-<div class="container">
+<div class="container" id="printableArea">
 <br>
 
 <!-- Text -->
@@ -29,7 +29,7 @@
         </table><br>
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
         <a href="<?= base_url(); ?>Vitamin" class="btn btn-primary float-right">KEMBALI</a>
-            <a href="#" class="btn btn-warning float-left" role="button">CETAK DATA</a>
+            <a href="#" class="btn btn-warning float-left" onclick="printDiv('printableArea')" role="button">CETAK DATA</a>
         </div>
         
   </div>

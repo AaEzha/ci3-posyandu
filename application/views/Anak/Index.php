@@ -58,9 +58,9 @@
       <td><?= $blt['NIK']; ?></td>
       <td><?= $blt['Nama_Anak']; ?></td>
       <td><?= $blt['Jenis_Kelamin']; ?></td>
-      <td><?= $blt['Umur']; ?> </td>
-      <td><?= $blt['Nama_Ibu']; ?> </td>
-      <td><?= $blt['Nama_Ayah']; ?> </td>
+      <td><?= umur($blt['Tanggal_Lahir'], "hari"); ?> </td>
+      <td><?= penduduk($blt['nik_ibu'], "Nama"); ?> </td>
+      <td><?= penduduk($blt['nik_ayah'], "Nama"); ?> </td>
       <td>
        <a class="btn btn-sm btn-info" href="<?= base_url(); ?>Anak/detail/<?= $blt['Id_Anak']; ?>" role="button">Detail</a>
        <a class="btn btn-sm" style="background-color:#FCCA46" href="<?= base_url(); ?>Anak/edit/<?= $blt['Id_Anak']; ?>" role="button" onclick="return confirm('Apakah yakin data ingin dirubah?');"" role="button" onclick="return confirm('Apakah yakin data ingin dirubah?');">Ubah</a>

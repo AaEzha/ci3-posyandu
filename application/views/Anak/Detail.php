@@ -49,17 +49,17 @@
                 <tr>
                 <th scope="row"> Umur</th>
                 <td>:</td>
-                <td><?= $anak['Umur']; ?></td>
+                <td><?= umur($anak['Tanggal_Lahir'], "hari"); ?></td>
                 </tr>
                 <tr>
                 <th scope="row"> Nama Ibu</th>
                 <td>:</td>
-                <td><?= $anak['Nama_Ibu']; ?></td>
+                <td><?= penduduk($anak['nik_ibu']); ?></td>
                 </tr>
                 <tr>
                 <th scope="row"> Nama Ayah</th>
                 <td>:</td>
-                <td><?= $anak['Nama_Ayah']; ?></td>
+                <td><?= penduduk($anak['nik_ayah']); ?></td>
                 </tr>
             </tbody>
         </table>

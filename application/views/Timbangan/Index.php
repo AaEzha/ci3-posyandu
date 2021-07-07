@@ -34,8 +34,8 @@
       <td><?= $tb['Nama_Ibu']; ?> </td>
       <td><?= $tb['Nama_Ayah']; ?> </td>
       <td>
-       <a class="btn btn-sm btn-info" href="#" role="button">Detail Cek</a>
-       <a class="btn btn-sm" style="background-color:#FCCA46" href="<?= base_url(); ?>Timbangan/tambah/<?= $tb['No_Anak']; ?>" role="button" onclick="return confirm('Apakah yakin data ingin dirubah?');">Tambah Cek</a>
+       <a class="btn btn-sm btn-info" href="<?= base_url(); ?>timbangan/detail/<?= $tb['Id_Anak']; ?>" role="button">Detail Cek</a>
+       <a class="btn btn-sm" style="background-color:#FCCA46" href="<?= base_url(); ?>Timbangan/tambah/<?= $tb['Id_Anak']; ?>" role="button" onclick="return confirm('Apakah yakin data ingin ditambah?');">Tambah Cek</a>
        </td>
     </tr>
     <?php endforeach; ?>

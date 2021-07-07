@@ -33,7 +33,7 @@
           <!-- Tempat Pelkon -->
           <div class="col-md-6">
           <div class="mb-3">
-          <label for="Umur_Suami">Tempat Pelkon</label>
+          <label for="Umur_Suami">Umur Suami</label>
           <input type="text" name="Umur_Suami" class="form-control form-control-sm"  value="<?= $Akseptor['Umur_Suami']?>">
           <small  class="form-text text-danger"><?= form_error('Umur_Suami') ?></small>
           </div>

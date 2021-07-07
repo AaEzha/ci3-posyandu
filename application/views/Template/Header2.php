@@ -21,7 +21,7 @@
         
 
         <!-- Judul -->
-        <title>Hello, world!</title>
+        <title>Posyandu Mawar RW 13</title>
 
     <!-- Head -->
     </head>
@@ -54,7 +54,10 @@
           <a class="nav-link" style="color: #ffffff " href="<?= base_url(); ?>Timbangan">Imunisasi</a>
         </li>
         <!-- 4 -->
-        <li class="nav-item dropdown">
+        <li class="nav-item">
+          <a class="nav-link" style="color: #ffffff " href="<?= base_url(); ?>vaksin">Data Vaksin</a>
+        </li>
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" style="color: #ffffff " id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Vaksin
           </a>
@@ -62,9 +65,12 @@
             <li><a class="dropdown-item" href="<?= base_url(); ?>VaksinAnak">Pemberian Vaksin</a></li>
             <li><a class="dropdown-item" href="<?= base_url(); ?>Vaksin">Data Vaksin</a></li>
           </ul>
-        </li>
+        </li> -->
         <!-- 5 -->
-        <li class="nav-item dropdown">
+				<li class="nav-item">
+          <a class="nav-link" style="color: #ffffff " href="<?= base_url(); ?>vitamin">Data Vitamin</a>
+        </li>
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" style="color: #ffffff " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Vitamin
           </a>
@@ -72,17 +78,17 @@
             <li><a class="dropdown-item" href="<?= base_url(); ?>VitaminAnak">Pemberian Vitamin</a></li>
             <li><a class="dropdown-item" href="<?= base_url(); ?>Vitamin">Data Vitamin</a></li>
           </ul>
-        </li>
+        </li> -->
         <!-- 6 -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" style="color: #ffffff " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Laporan Kegiatan
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="<?= base_url(); ?>LaporanAnak">Laporan Data Anak & Balita</a></li>
-            <li><a class="dropdown-item" href="<?= base_url(); ?>LaporanImunisasi">Laporan Data Imunisasi</a></li>
-            <li><a class="dropdown-item" href="<?= base_url(); ?>LaporanVaksin">Laporan Data Vaksin</a></li>
-            <li><a class="dropdown-item" href="<?= base_url(); ?>LaporanVitamin">Laporan Data Vitamin</a></li>
+            <li><a class="dropdown-item" href="<?= base_url(); ?>Laporan/Anak">Laporan Data Anak & Balita</a></li>
+            <li><a class="dropdown-item" href="<?= base_url(); ?>Laporan/Imunisasi">Laporan Data Imunisasi</a></li>
+            <li><a class="dropdown-item" href="<?= base_url(); ?>Laporan/Vaksin">Laporan Data Vaksin</a></li>
+            <li><a class="dropdown-item" href="<?= base_url(); ?>Laporan/Vitamin">Laporan Data Vitamin</a></li>
           </ul>
         </li>
       </ul>

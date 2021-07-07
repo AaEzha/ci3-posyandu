@@ -43,6 +43,7 @@
       <td><?= $k['Pekerjaan_Suami']; ?></td>
       <td><?= $k['Nama_Istri']; ?></td>
       <td><?= $k['Umur_Istri']; ?></td>
+      <td><?= $k['Alamat_Istri']; ?></td>
       <td><?= $k['Pekerjaan_Istri']; ?></td>
       <td>
        <a class="btn btn-sm btn-info" href="<?= base_url(); ?>kawin/detail/<?= $k['Id_Kawin']; ?>" role="button">Detail</a>

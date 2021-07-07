@@ -1,6 +1,12 @@
 <?php
 
-class Anak extends CI_Controller{
+class Anak extends CI_Controller {
+	
+	public function __construct()
+	{
+		parent::__construct();
+		is_logged_in(2);
+	}
 
     // Index Home
     public function index()
@@ -32,13 +38,13 @@ class Anak extends CI_Controller{
         $this->form_validation->set_rules('Anak_Ke','Anak_Ke','required');
         $this->form_validation->set_rules('Nama_Anak','Nama Anak','required');
         $this->form_validation->set_rules('Tempat_Lahir','Tempat Lahir','required');
-        $this->form_validation->set_rules('Nama_Ibu','Nama Ibu','required');
-        $this->form_validation->set_rules('Nama_Ayah','Nama Ayah','required');
+        $this->form_validation->set_rules('nik_ibu','Nama Ibu','required');
+        $this->form_validation->set_rules('nik_ayah','Nama Ayah','required');
 
         if( $this->form_validation->run() == FALSE) 
         {
         $this->load->view('Template/Header2');
-        $this->load->view('Anak/tambah',$data);
+        $this->load->view('Anak/Tambah',$data);
         $this->load->view('Template/Footer2');
         } else {
             $this->Anak_Model->tambahAnak();
@@ -87,10 +93,10 @@ class Anak extends CI_Controller{
        $this->form_validation->set_rules('NIK', 'NIK', 'required');
        $this->form_validation->set_rules('Nama_Anak', 'Nama Anak', 'required');
        $this->form_validation->set_rules('Tempat_Lahir', 'Tempat Lahir', 'required');
-       $this->form_validation->set_rules('Nama_Ibu', 'Nama Ibu', 'required');
-       $this->form_validation->set_rules('Nama_Ayah', 'Nama Ayah', 'required');
+    //    $this->form_validation->set_rules('Nama_Ibu', 'Nama Ibu', 'required');
+    //    $this->form_validation->set_rules('Nama_Ayah', 'Nama Ayah', 'required');
        $this->form_validation->set_rules('Alamat', 'Nama Ibu', 'required');
-       $this->form_validation->set_rules('Umur', 'Umur', 'required');
+    //    $this->form_validation->set_rules('Umur', 'Umur', 'required');
        $this->form_validation->set_rules('Rt', 'Nama Ayah', 'required');
        $this->form_validation->set_rules('Desa', 'Alamat ', 'required');
        $this->form_validation->set_rules('Kecamatan', 'Alamat ', 'required');

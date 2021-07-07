@@ -16,7 +16,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400&display=swap" rel="stylesheet">
 
         <!-- Judul -->
-        <title>Hello, world!</title>
+        <title>Sub-PKKBD Puskesmas Mawar RW 13</title>
 
     <!-- Head -->
     </head>
@@ -60,12 +60,22 @@
           <a class="nav-link" style="color: #ffffff " href="<?= base_url(); ?>Kematian">Kematian</a>
         </li>
         <!-- 6 -->
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" style="color: #ffffff " href="<?= base_url(); ?>Datang">Penduduk Datang</a>
-        </li>
+        </li> -->
         <!-- 7 -->
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" style="color: #ffffff " href="<?= base_url(); ?>Pindah">Penduduk Pindah</a>
+        </li> -->
+				<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="color: #ffffff " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Data Penduduk
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="<?= base_url(); ?>Penduduk">Master Penduduk</a></li>
+            <li><a class="dropdown-item" href="<?= base_url(); ?>Datang">Penduduk Datang</a></li>
+            <li><a class="dropdown-item" href="<?= base_url(); ?>Pindah">Penduduk Pindah</a></li>
+          </ul>
         </li>
         <!-- 8 -->
         <li class="nav-item dropdown">
@@ -81,6 +91,14 @@
             <li><a class="dropdown-item" href="<?= base_url(); ?>LaporanVitamin">Laporan Data Penduduk Pindah</a></li>
           </ul>
         </li>
+				<!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="color: #ffffff " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Opsi Akun
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="<?= base_url('auth/logout'); ?>">Keluar Akun</a></li>
+          </ul>
+        </li> -->
       </ul>
     </div>
   </div>

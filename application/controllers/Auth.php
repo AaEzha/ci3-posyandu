@@ -29,9 +29,10 @@ class auth extends CI_Controller{
         if($user){
             if(md5($password) == $user['password']){
                 $data = [
+                    'id' => $user['id'],
                     'username' => $user['username'],
                     'name' => $user['name'],
-					'role' => $user['role_id'],
+					'role_id' => $user['role_id'],
                 ];
                 $this->session->set_userdata($data);
                 redirect('/');
@@ -109,6 +110,11 @@ class auth extends CI_Controller{
 		$this->session->session_destroy;
         $this->session->set_flashdata('message', '<div class="alert alert-primary" role="alert">You has been logged out.</div>');
         redirect('./');
+    }
+
+	public function blocked()
+    {
+        $this->load->view('auth/blocked');
     }
 }
 

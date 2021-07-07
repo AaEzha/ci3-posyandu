@@ -19,14 +19,20 @@ class Akseptor_Model extends CI_model
 
     public function tambah()
     {
+		$this->load->model('Mpenduduk');
+		$suami = Mpenduduk::find($this->input->post('nik_suami', true));
+		$istri = Mpenduduk::find($this->input->post('nik_istri', true));
+
         $data = [
             "Id_Akseptor" => $this->input->post('Id_Akseptor', true),
             "Nama_Suami" => $this->input->post('Nama_Suami', true),
             "Tanggal_Lahir_Suami" => $this->input->post('Tanggal_Lahir_Suami', true),
-            "Umur_Suami" => $this->input->post('Umur_Suami', true),
+            "nik_suami" => $this->input->post('nik_suami', true),
+            "nik_istri" => $this->input->post('nik_istri', true),
+            "Umur_Suami" => umur($suami->Tanggal_Lahir),
             "Nama_Istri" => $this->input->post('Nama_Istri', true),
             "Tanggal_Lahir_Istri" => $this->input->post('Tanggal_Lahir_Istri', true),
-            "Umur_Istri" => $this->input->post('Umur_Istri', true),
+            "Umur_Istri" => umur($istri->Tanggal_Lahir),
             "Alamat" => $this->input->post('Alamat', true),
             "Rt" => $this->input->post('Rt', true),
             "Rw" => $this->input->post('Rw', true),

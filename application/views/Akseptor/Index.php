@@ -3,7 +3,7 @@
 <br>
 
 <!-- Text -->
-<h2 class="text-center"> Data Anak dan Balita </h2><hr ><p></p>
+<h2 class="text-center"> <?= $title ?? "Puskesmas Mawar"; ?> </h2><hr ><p></p>
 
 <!-- Button Atas  -->
 <div class="d-grid gap-2 d-md-flex">
@@ -37,9 +37,9 @@
       <td><?= ++$no ?></td>
       <td><?= $aks['Id_Akseptor']; ?></td>
       <td><?= $aks['Nama_Suami']; ?></td>
-      <td><?= $aks['Umur_Suami']; ?></td>
+      <td><?= umur($aks['Tanggal_Lahir_Suami'], 'hari'); ?></td>
       <td><?= $aks['Nama_Istri']; ?></td>
-      <td><?= $aks['Umur_Istri']; ?></td>
+			<td><?= umur($aks['Tanggal_Lahir_Istri'], 'hari'); ?></td>
       <td><?= $aks['Tanggal_Pelkon']; ?></td>
       <td><?= $aks['Metoda_Pelkon']; ?> </td>
       <td><?= $aks['Do_Dari']; ?> </td>

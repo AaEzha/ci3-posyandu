@@ -2,6 +2,12 @@
 
 class Pindah extends CI_Controller{
 
+	public function __construct()
+	{
+		parent::__construct();
+		is_logged_in(4);
+	}
+
     // Index Home
     public function index()
     {
@@ -34,7 +40,7 @@ class Pindah extends CI_Controller{
         if( $this->form_validation->run() == FALSE) 
         {
         $this->load->view('Template/Header4');
-        $this->load->view('Pindah/tambah',$data);
+        $this->load->view('Pindah/Tambah',$data);
         $this->load->view('Template/Footer4');
         } else {
             $this->Pindah_Model->tambah();

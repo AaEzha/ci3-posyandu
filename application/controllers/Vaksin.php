@@ -2,6 +2,12 @@
 
 class Vaksin extends CI_Controller{
 
+	public function __construct()
+	{
+		parent::__construct();
+		is_logged_in(2);
+	}
+
     // Index Home
     public function index()
     {
@@ -27,7 +33,7 @@ class Vaksin extends CI_Controller{
         if( $this->form_validation->run() == FALSE) 
         {
         $this->load->view('Template/Header2');
-        $this->load->view('Vaksin/tambah',$data);
+        $this->load->view('Vaksin/Tambah',$data);
         $this->load->view('Template/Footer2');
         } else {
             $this->Vaksin_Model->tambah();

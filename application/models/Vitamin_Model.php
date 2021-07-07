@@ -25,7 +25,7 @@ class Vitamin_Model extends CI_model
             "Usia_Wajib_Vitamin" => $this->input->post('Usia_Wajib_Vitamin', true)
 
         ];
-        $this->db->insert('Vitamin', $data);
+        $this->db->insert('vitamin', $data);
     }
     
 

@@ -7,13 +7,13 @@
             <?= $this->session->flashdata('message'); ?>
             <form class="form-signin" action="<?= base_url('auth'); ?>" method="post">
               <div class="form-label-group">
-                <input type="text" id="username" name="username" class="form-control" placeholder="Username" required autofocus>
-                <label for="username">Username</label>
+                <!-- <label for="username">Username</label> -->
+                <input type="text" id="username" name="username" class="form-control mb-2" placeholder="Username" required autofocus>
               </div>
 
               <div class="form-label-group">
-                <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
-                <label for="password">Kata Sandi</label>
+                <!-- <label for="password">Kata Sandi</label> -->
+                <input type="password" id="password" name="password" class="form-control mb-2" placeholder="Password" required>
               </div>
               <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Masuk</button>
               <a href="<?= base_url('/'); ?>">Kembali</a>

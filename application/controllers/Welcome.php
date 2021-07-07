@@ -22,4 +22,20 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
+
+	public function penduduk()
+	{
+		$id = $this->input->post('nik');
+		$this->load->model('Mpenduduk');
+		$p = Mpenduduk::find($id);
+		echo json_encode($p);
+	}
+
+	public function umur()
+	{
+		$id = $this->input->post('nik');
+		$this->load->model('Mpenduduk');
+		$p = Mpenduduk::find($id);
+		echo json_encode(umur($p->Tanggal_Lahir));
+	}
 }

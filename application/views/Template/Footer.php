@@ -5,5 +5,15 @@
       <br><h6 class="text-light"> Posyandu Mawar Rw. 13  </h6><br>
 </footer>
 <!-- Penutup -->
+<script>
+	function printDiv(divName) {
+		var printContents = document.getElementById(divName).innerHTML;
+		var originalContents = document.body.innerHTML;
+		document.body.innerHTML = printContents;
+		window.print();
+		document.body.innerHTML = originalContents;
+	}
+</script>
+	<?php $this->load->view($js ?? "auth/blank"); ?>
 </body>
 </html>

@@ -63,10 +63,10 @@
         </div>
 
          <!-- Umur -->
-         <div class="mb-3">
+         <!-- <div class="mb-3">
         <label for="Umur">Umur</label>
         <input type="text" name="Umur" class="form-control" id="Umur" value="<?= $anak['Umur']?>">
-        </div>
+        </div> -->
 
         <!-- Nama -->
         <div class="mb-3">
@@ -77,14 +77,14 @@
 
         <!-- Nama Ibu -->
         <div class="mb-3">
-        <label for="Nama_Ibu">Nama Ibu</label>
-        <input type="text" name="Nama_Ibu" class="form-control" id="Nama_Ibu" value="<?= $anak['Nama_Ibu']?>">
+        <label for="nik_ibu">NIK Ibu</label>
+        <input type="text" name="nik_ibu" class="form-control" id="nik_ibu" value="<?= $anak['nik_ibu']?>">
         </div>
 
         <!-- Nama Ayah -->
         <div class="mb-3">
-        <label for="Nama_Ayah">Nama Ayah</label>
-        <input type="text" name="Nama_Ayah" class="form-control" id="Nama_Ayah" value="<?= $anak['Nama_Ayah']?>">
+        <label for="nik_ayah">NIK Ayah</label>
+        <input type="text" name="nik_ayah" class="form-control" id="nik_ayah" value="<?= $anak['nik_ayah']?>">
         </div>
         
 
@@ -170,7 +170,7 @@
         <!-- Button -->
         <br><br><br>
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-          <a class="btn " style="background-color:#B1C695" href="#" role="button">Kembali</a>
+          <a class="btn " style="background-color:#B1C695" href="<?=base_url('anak');?>" role="button">Kembali</a>
           <button type="submit" style="background-color:#5894C6" name="edit" class="btn btn-primary"> Update Data </button>
 </div>
       </div>

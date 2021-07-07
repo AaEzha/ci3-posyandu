@@ -26,6 +26,8 @@ class Kawin_Model extends CI_model
              "Pendidikan_Suami" => $this->input->post('Pendidikan_Suami', true),
              "Pekerjaan_Suami" => $this->input->post('Pekerjaan_Suami', true),
              "Alamat_Suami" => $this->input->post('Alamat_Suami', true),
+             "Tanggal_Lahir_Suami" => $this->input->post('Tanggal_Lahir_Suami', true),
+             "Tanggal_Lahir_Istri" => $this->input->post('Tanggal_Lahir_Istri', true),
              "Rt_Suami" => $this->input->post('Rt_Suami', true),
              "Rw_Suami" => $this->input->post('Rw_Suami', true),
              "Desa_Suami" => $this->input->post('Desa_Suami', true),

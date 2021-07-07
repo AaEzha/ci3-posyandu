@@ -53,7 +53,7 @@
       <td><?= $blt['Id_Anak']; ?></td>
       <td><?= $blt['Nama_Anak']; ?></td>
       <td><?= $blt['Jenis_Kelamin']; ?></td>
-      <td><?= $blt['Umur']; ?> </td>
+      <td><?= umur($blt['Tanggal_Lahir'], "hari"); ?> </td>
       <td><?= $blt['Nama_Ibu']; ?> </td>
       <td><?= $blt['Nama_Ayah']; ?> </td>
       <td><?= $blt['Status_Warga']; ?> </td>
