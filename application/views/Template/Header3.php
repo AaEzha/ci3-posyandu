@@ -16,7 +16,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400&display=swap" rel="stylesheet">
 
         <!-- Judul -->
-        <title>Hello, world!</title>
+        <title>Posyandu Mawar RW 13</title>
 
     <!-- Head -->
     </head>
@@ -42,7 +42,7 @@
         </li>
         <!-- 2 -->
         <li class="nav-item">
-          <a class="nav-link" style="color: #ffffff " href="<?= base_url(); ?>Anak">Ibu Hamil</a>
+          <a class="nav-link" style="color: #ffffff " href="<?= base_url(); ?>Hamil">Ibu Hamil</a>
         </li>
         <!-- 3 -->
         <li class="nav-item">
