@@ -46,28 +46,7 @@
         </li>
         <!-- 3 -->
         <li class="nav-item">
-          <a class="nav-link" style="color: #ffffff " href="<?= base_url(); ?>Timbangan">Pengecekan</a>
-        </li>
-        <!-- 4 -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" style="color: #ffffff " id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Vitamin
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="<?= base_url(); ?>VaksinAnak">Pemberian Vaksin</a></li>
-            <li><a class="dropdown-item" href="<?= base_url(); ?>Vaksin">Data Vaksin</a></li>
-          </ul>
-        </li>
-        <!-- 6 -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" style="color: #ffffff " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Laporan Kegiatan
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="<?= base_url(); ?>LaporanIbuHamil">Laporan Data Ibu Hamil</a></li>
-            <li><a class="dropdown-item" href="<?= base_url(); ?>LaporanPengecekan">Laporan Data Imunisasi</a></li>
-            <li><a class="dropdown-item" href="<?= base_url(); ?>LaporanVitamin">Laporan Data Vitamin</a></li>
-          </ul>
+          <a class="nav-link" style="color: #ffffff " href="<?= base_url(); ?>laporan/hamil">Laporan Data Ibu Hamil</a>
         </li>
       </ul>
     </div>

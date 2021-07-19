@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 07, 2021 at 05:56 AM
+-- Generation Time: Jul 19, 2021 at 10:22 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.13
 
@@ -58,7 +58,7 @@ CREATE TABLE `akseptor` (
 --
 
 INSERT INTO `akseptor` (`Id_Akseptor`, `nik_suami`, `nik_istri`, `Nama_Suami`, `Tanggal_Lahir_Suami`, `Umur_Suami`, `Nama_Istri`, `Tanggal_Lahir_Istri`, `Umur_Istri`, `Alamat`, `Rt`, `Rw`, `Desa`, `Kecamatan`, `Kabupaten`, `Provinsi`, `Jumlah_Anak_Lk`, `Jumlah_Anak_Pr`, `Umur_Anak_Kecil`, `Tanggal_Pelkon`, `Metoda_Pelkon`, `Do_Dari`, `Tempat_Pelkon`) VALUES
-('AKS-00002', '002', '001', 'Wiwik', '1997-03-08', 24, 'Reza', '1989-08-16', 31, 'Jl. Orion', '2', '013', 'Kertajaya', 'Padalarang', 'Bandung Barat', 'Jawa Barat', 1, 1, '1', '2021-07-21', 'IMPLAN', '-', 'Posyandu');
+('AKS-00002', '002', '001', 'Reza', '1989-08-16', 31, 'Wiwik', '1997-03-08', 24, 'Jl. Orion', '002', '013', 'Kertajaya', 'Padalarang', 'Bandung Barat', 'Jawa Barat', 1, 1, '1', '2021-07-21', 'IMPLANT', 'IUD', 'Posyandu');
 
 -- --------------------------------------------------------
 
@@ -199,7 +199,8 @@ CREATE TABLE `datang` (
 INSERT INTO `datang` (`Id_Datang`, `Nama_KK`, `Tanggal_Lahir_KK`, `Umur_KK`, `Nama_Istri`, `Tanggal_Lahir_Istri`, `Umur_Istri`, `Alamat_Datang`, `Rt_Datang`, `Rw_Datang`, `Desa_Datang`, `Kecamatan_Datang`, `Kabupaten_Datang`, `Provinsi_Datang`, `Jumlah_Jiwa_Lk`, `Jumlah_Jiwa_Pr`, `Jumlah_Anak_Lk`, `Jumlah_Anak_Pr`, `Kb`, `Ks`) VALUES
 ('DTG-00001', 'Sulaeman', '2021-06-02', 54, 'Yanti', '2021-06-10', 49, 'Kp. Cisalak', '003', '022', 'Kertajaya', 'Padalarang', 'Bandung Barat', 'Jawa Barat', 3, 2, 2, 1, 'Ya', 'Tidak'),
 ('DTG-00002', 'Ayi Hambali', '2021-06-11', 54, 'Nia Kurnia', '2021-06-17', 21, 'Jl. Orion', '2', '013', 'Kertajaya', 'Padalarang', 'Bandung Barat', 'Jawa Barat', 1, 2, 0, 2, 'Ya', 'Tidak'),
-('DTG-00003', 'Ayi Hambali', '2021-06-09', 54, 'Nia Kurnia', '2021-06-16', 52, 'Jl. Orion', '3', '013', 'Kertajaya', 'Padalarang', 'Bandung Barat', 'Jawa Barat', 1, 2, 1, 0, 'Ya', 'Tidak');
+('DTG-00003', 'Ayi Hambali', '2021-06-09', 54, 'Nia Kurnia', '2021-06-16', 52, 'Jl. Orion', '3', '013', 'Kertajaya', 'Padalarang', 'Bandung Barat', 'Jawa Barat', 1, 2, 1, 0, 'Ya', 'Tidak'),
+('DTG-00004', 'Reza', '1989-08-16', 31, 'Wiwik', '1997-03-08', 24, 'Jl. Orion', '004', '013', 'Kertajaya', 'Padalarang', 'Bandung Barat', 'Jawa Barat', 2, 2, 1, 1, 'Ya', 'Tidak');
 
 -- --------------------------------------------------------
 
@@ -339,7 +340,7 @@ CREATE TABLE `melahirkan` (
 INSERT INTO `melahirkan` (`Id_Lahir`, `Nama_Suami`, `Umur_Suami`, `Nama_Istri`, `Umur_Istri`, `Alamat`, `Rt`, `Rw`, `Nama_Bayi`, `Tanggal_Lahir_Bayi`, `Jenis_Kelamin_Bayi`, `Anak_Ke`, `Desa`, `Kecamatan`, `Kabupaten`, `Provinsi`) VALUES
 ('LHR-00001', 'Muhammad Azmi', 21, 'Anandiya Putri', 19, 'Kp. Cisalak', '003', '022', 'Khadijah Putri', '2021-06-09', 'Perempuan', 1, 'Kertajaya', 'Padalarang', 'Bandung Barat', 'Jawa Barat'),
 ('LHR-00002', 'Sayyidina Hamzah', 24, 'Aulia Nur Fadillah', 21, 'Jl. Orion', '4', '013', 'Muhammad Fathurrahman', '2021-06-24', 'Laki-Laki', 1, 'Kertajaya', 'Padalarang', 'Bandung Barat', 'Jawa Barat'),
-('LHR-00003', 'Muhammad Fajarudin Muawan', 25, 'Syahdillah Tasnia Awali', 24, 'Jl. Orion', '3', '013', 'Muhammad Miftah Muawan', '2024-06-05', 'Laki-Laki', 1, 'Kertajaya', 'Padalarang', 'Bandung Barat', 'Jawa Barat'),
+('LHR-00003', 'Muhammad Fajarudin Muawan', 25, 'Syahdillah Tasnia Awali', 24, 'Jl. Orion', '3', '013', 'Muhammad Miftah Muawan', '2021-07-05', 'Laki-Laki', 1, 'Kertajaya', 'Padalarang', 'Bandung Barat', 'Jawa Barat'),
 ('LHR-00004', 'Reza', 31, 'Wiwik', 24, 'Jl. Orion', '004', '013', 'Fidza', '2021-07-07', 'Perempuan', 2, 'Kertajaya', 'Padalarang', 'Bandung Barat', 'Jawa Barat');
 
 -- --------------------------------------------------------
@@ -376,7 +377,7 @@ CREATE TABLE `penduduk` (
 --
 
 INSERT INTO `penduduk` (`NIK`, `No_KK`, `Nama`, `Jenis_Kelamin`, `Tempat_Lahir`, `Tanggal_Lahir`, `Agama`, `Pendidikan`, `Nama_Ibu`, `Nama_Ayah`, `Pekerjaan`, `KWN`, `Status_Hubungan`, `Alamat`, `Rt`, `Rw`, `Desa`, `Kecamatan`, `Kabupaten`, `Provinsi`) VALUES
-('001', '007', 'Reza', 'Laki-Laki', 'Tangerang', '1989-08-16', 'Islam', 'SMA', 'Ibu', 'Ayah', 'Belum bekerja', 'WNI', 'Kepala Keluarga', 'Alamatnya', '004', '003', 'Kertajaya', 'Padalarang', 'Bandung Barat', 'Jawa Barat'),
+('001', '007', 'Reza', 'Laki-Laki', 'Tangerang', '1989-08-16', 'Islam', 'SMA', 'Ibu', 'Ayah', 'Pegawai Swasta', 'WNI', 'Kepala Keluarga', 'Alamatnya', '004', '003', 'Kertajaya', 'Padalarang', 'Bandung Barat', 'Jawa Barat'),
 ('002', '007', 'Wiwik', 'Perempuan', 'Tangerang', '1997-03-08', 'Islam', 'SMA', 'Ibu', 'Ayah', 'Belum bekerja', 'WNI', 'Istri', 'Alamatnya', '004', '003', 'Kertajaya', 'Padalarang', 'Bandung Barat', 'Jawa Barat'),
 ('003', '007', 'Fidzi Arafah', 'Laki-Laki', 'Wonosobo', '2021-02-21', 'Islam', 'Belum Sekolah', 'Wiwik Listiyarini', 'Reza Nurfachmi', 'Belum bekerja', 'WNI', 'Anak', 'Alamatnya', '004', '003', 'Kertajaya', 'Padalarang', 'Bandung Barat', 'Jawa Barat'),
 ('004', '007', 'Fidza', 'Perempuan', 'Tangerang', '2021-07-07', 'Islam', 'Belum Sekolah', 'Wiwik', 'Reza', 'Belum bekerja', 'WNI', 'Anak', 'Jl. Orion', '01', '13', 'Kertajaya', 'Padalarang', 'Bandung Barat', 'Jawa Barat'),
@@ -419,7 +420,7 @@ CREATE TABLE `pindah` (
 --
 
 INSERT INTO `pindah` (`Id_Pindah`, `Nama_KK_Pindah`, `Tanggal_Lahir_KK_Pindah`, `Umur_KK_Pindah`, `Nama_Istri_Pindah`, `Tanggal_Lahir_Istri_Pindah`, `Umur_Istri_Pindah`, `Alamat_Pindah`, `Rt_Pindah`, `Rw_Pindah`, `Desa_Pindah`, `Kecamatan_Pindah`, `Kabupaten_Pindah`, `Provinsi_Pindah`, `Jumlah_Jiwa_Lk_Pindah`, `Jumlah_Jiwa_Pr_Pindah`, `Jumlah_Anak_Lk_Pindah`, `Jumlah_Anak_Pr_Pindah`, `Kb`, `Ks`) VALUES
-('PDH-00001', 'Suswanto Wardoyo', '1994-09-12', 27, 'Ani Murtini', '1995-02-14', 26, 'Kp. Cisalak ', '02', '022', 'Kertajaya', 'Padalarang', 'Bandung Barat', 'Jawa Barat', 1, 2, 0, 1, 'Ya', 'Tidak');
+('PDH-00002', 'Reza', '1989-08-16', 31, 'Wiwik', '1997-03-08', 24, 'Jl. Orion', '005', '013', 'Kertajaya', 'Padalarang', 'Bandung Barat', 'Jawa Barat', 2, 1, 1, 0, 'Ya', 'Tidak');
 
 -- --------------------------------------------------------
 
