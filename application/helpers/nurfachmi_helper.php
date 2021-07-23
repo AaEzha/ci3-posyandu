@@ -24,15 +24,15 @@ function umur($umur, $output = "tahun")
 
 	switch ($output) {
 		case 'tahun':
-			$t = $diff->y;
+			$t = $diff->y . " tahun";
 			break;
 		
 		case 'bulan':
-			$t = $diff->y . "/" .$diff->m;
+			$t = $diff->y . " tahun, " .$diff->m . " bulan";
 			break;
 		
 		case 'hari':
-			$t = $diff->y . "/" .$diff->m . "/" .$diff->d;
+			$t = $diff->m . " bulan, " .$diff->d . " hari";
 			break;
 		
 		default:

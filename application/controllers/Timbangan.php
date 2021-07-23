@@ -1,6 +1,7 @@
 <?php
 
-class Timbangan extends CI_Controller{
+class Timbangan extends CI_Controller
+{
 
 	public function __construct()
 	{
@@ -11,38 +12,52 @@ class Timbangan extends CI_Controller{
 		$this->load->model('Mvaksin');
 		$this->load->model('Mvitamin');
 		$this->load->model('Timbang_Model');
+		$this->load->model('Mpenduduk');
 	}
 
-    // Index Home
-    public function index()
-    {
-        $data['Timbang'] = $this->Timbang_Model->getAnak();
-        $this->load->view('Template/Header2');
-        $this->load->view('Timbangan/Index',$data);
-        $this->load->view('Template/Footer2');
-    }
-    
-    public function tambah($id)
-    {
-		$this->form_validation->set_rules('Berat_Badan','Berat_Badan','required');
-		$this->form_validation->set_rules('Id_Vitamin','Vitamin','required');
-		$this->form_validation->set_rules('Id_Vaksin','Vaksin','required');
-		$this->form_validation->set_rules('Tanggal_Timbang','Tanggal_Timbang','required');
+	// Index Home
+	public function index()
+	{
+		$data['Timbang'] = $this->Timbang_Model->getAnak();
+		$this->load->view('Template/Header2');
+		$this->load->view('Timbangan/Index', $data);
+		$this->load->view('Template/Footer2');
+	}
 
-		if( $this->form_validation->run() == FALSE) {
+	public function tambah($id)
+	{
+		$this->form_validation->set_rules('Berat_Badan', 'Berat_Badan', 'required');
+		$this->form_validation->set_rules('Id_Vitamin', 'Vitamin', 'required');
+		$this->form_validation->set_rules('Id_Vaksin', 'Vaksin', 'required');
+		$this->form_validation->set_rules('Tanggal_Timbang', 'Tanggal_Timbang', 'required');
+
+		if ($this->form_validation->run() == FALSE) {
 			$dariDB = $this->Timbang_Model->kode();
 			$nourut = substr($dariDB, 9, 5);
 			$idnya = $nourut + 1;
 
 			$data['id'] = $idnya;
-			$data['anak'] = Manak::where('Id_Anak',$id)->first();
+			$data['anak'] = Manak::where('Id_Anak', $id)->first();
 			$data['vaksin'] = Mvaksin::all();
 			$data['vitamin'] = Mvitamin::all();
 
 			$this->load->view('Template/Header2', $data);
 			$this->load->view('Timbangan/Tambah', $data);
 			$this->load->view('Template/Footer2', $data);
-		}else{
+		} else {
+			// Hitung BMI
+			$bmi = ($this->input->post('Berat_Badan') / 1000) / pow(($this->input->post('Tinggi_Badan') / 100), 2);
+
+			if($bmi < 18.5) {
+				$gizi = "Kurang";
+			}elseif($bmi >= 18.5 and $bmi <= 22.9) {
+				$gizi = "Normal";
+			}elseif($bmi >= 23 and $bmi <= 29.9) {
+				$gizi = "Lebih";
+			}else{
+				$gizi = "Obesitas";
+			}
+
 			Mtimbangan::insert([
 				'Id_Timbangan' => $this->input->post('Id_Timbangan'),
 				'NIK' => $this->input->post('NIK'),
@@ -51,22 +66,19 @@ class Timbangan extends CI_Controller{
 				'Tanggal_Timbang' => $this->input->post('Tanggal_Timbang'),
 				'Id_Vitamin' => $this->input->post('Id_Vitamin'),
 				'Id_Vaksin' => $this->input->post('Id_Vaksin'),
-				'Hasil_Gizi' => $this->input->post('Hasil_Gizi'),
+				'Hasil_Gizi' => $gizi,
 			]);
 			redirect('timbangan');
 		}
-        
-    }
+	}
 
 	public function detail($id)
 	{
-		$data['anak'] = Manak::where('Id_Anak',$id)->first();
+		$data['anak'] = Manak::where('Id_Anak', $id)->first();
 		$data['timbangan'] = Mtimbangan::where('NIK', $data['anak']->NIK)->get();
 
 		$this->load->view('Template/Header2', $data);
 		$this->load->view('Timbangan/detail', $data);
 		$this->load->view('Template/Footer2', $data);
 	}
-    
-
 }

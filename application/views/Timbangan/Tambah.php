@@ -74,13 +74,6 @@
 						</div>
 
 
-						<div class="mb-3">
-							<label for="Hasil_Gizi">Hasil Gizi</label>
-							<input type="text" name="Hasil_Gizi" class="form-control" id="Hasil_Gizi">
-							<small class="form-text text-danger"><?= form_error('Hasil_Gizi') ?></small>
-						</div>
-
-
 						<!-- Button -->
 						<br><br><br>
 						<div class="d-grid gap-2 d-md-flex justify-content-md-end">
