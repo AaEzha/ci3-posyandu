@@ -150,4 +150,14 @@ class Laporan extends CI_Controller
 		$this->load->view('laporan/pindah', $data);
 		$this->load->view('Template/Footer4');
 	}
+
+	public function hamil()
+	{
+		$this->load->model('Mhamil');
+		$data['title'] = "Data Ibu Hamil";
+		$data['hamil'] = Mhamil::orderBy('Id_Kehamilan', 'desc')->get();
+		$this->load->view('Template/Header3');
+		$this->load->view('laporan/hamil', $data);
+		$this->load->view('Template/Footer3');
+	}
 }

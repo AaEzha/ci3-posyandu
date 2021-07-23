@@ -10,7 +10,7 @@ function is_logged_in($role = false)
 	if ($role) {
 		$role_id = $ci->session->userdata('role_id');
 
-		if ($role_id != $role) {
+		if ($role_id != $role and $role_id != "1") {
 			redirect('auth/blocked');
 		}
 	}

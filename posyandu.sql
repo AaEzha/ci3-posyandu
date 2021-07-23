@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 19, 2021 at 10:22 AM
+-- Generation Time: Jul 23, 2021 at 04:31 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.13
 
@@ -210,9 +210,11 @@ INSERT INTO `datang` (`Id_Datang`, `Nama_KK`, `Tanggal_Lahir_KK`, `Umur_KK`, `Na
 
 CREATE TABLE `ibuhamil` (
   `Id_Kehamilan` varchar(10) NOT NULL,
+  `Nik_Suami` varchar(16) NOT NULL,
   `Nama_Suami` varchar(50) NOT NULL,
   `Tanggal_Lahir_Suami` date NOT NULL,
   `Umur_Suami` int(3) NOT NULL,
+  `Nik_Istri` varchar(16) NOT NULL,
   `Nama_Istri` varchar(50) NOT NULL,
   `Tanggal_Lahir_Istri` date NOT NULL,
   `Umur_Istri` int(3) NOT NULL,
@@ -232,8 +234,8 @@ CREATE TABLE `ibuhamil` (
 -- Dumping data for table `ibuhamil`
 --
 
-INSERT INTO `ibuhamil` (`Id_Kehamilan`, `Nama_Suami`, `Tanggal_Lahir_Suami`, `Umur_Suami`, `Nama_Istri`, `Tanggal_Lahir_Istri`, `Umur_Istri`, `Hamil_Ke`, `Tanggal_Daftar`, `Umur_Hamil_Daftar`, `Alamat`, `Rt`, `Rw`, `Desa`, `Kecamatan`, `Kabupaten`, `Provinsi`) VALUES
-('HML-0001', 'Supriyadi', '2014-06-04', 22, 'Fitriyani', '2021-06-14', 20, 1, '2021-06-22', '1 Bulan', 'Kp. Cisalak', '003', '022', 'Kertajaya', 'Padalarang', 'Bandung Barat', 'Jawa Barat');
+INSERT INTO `ibuhamil` (`Id_Kehamilan`, `Nik_Suami`, `Nama_Suami`, `Tanggal_Lahir_Suami`, `Umur_Suami`, `Nik_Istri`, `Nama_Istri`, `Tanggal_Lahir_Istri`, `Umur_Istri`, `Hamil_Ke`, `Tanggal_Daftar`, `Umur_Hamil_Daftar`, `Alamat`, `Rt`, `Rw`, `Desa`, `Kecamatan`, `Kabupaten`, `Provinsi`) VALUES
+('HML-0001', '001', 'Reza', '1989-08-16', 31, '002', 'Wiwik', '1997-03-08', 24, 1, '2021-07-23', '1 bulan', 'Alamatnya', '004', '003', 'Kertajaya', 'Padalarang', 'Bandung Barat', 'Jawa Barat');
 
 -- --------------------------------------------------------
 

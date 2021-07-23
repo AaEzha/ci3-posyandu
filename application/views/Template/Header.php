@@ -60,7 +60,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="<?= base_url('auth/logout'); ?>">Keluar Akun</a></li>
-            <li><a class="dropdown-item" href="<?= base_url(); ?>Register">Tambahkan Akun</a></li>
+            <!-- <li><a class="dropdown-item" href="<?= base_url(); ?>Register">Tambahkan Akun</a></li> -->
           </ul>
         </li>
 				<?php } ?>

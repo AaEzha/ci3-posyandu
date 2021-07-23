@@ -1,6 +1,6 @@
 <!-- Container -->
 <div class="container"><br>
-	<h2 class="text-center"> Form Peubahan Data Ibu Hamil</h2>
+	<h2 class="text-center"> Detail Penambahan Data Ibu Hamil</h2>
 	<hr class="mx-auto" width="35%"><BR>
 
 	<!-- Card 1 -->
@@ -206,8 +206,7 @@
 		</div><br><br>
 		<!-- Button -->
 		<div class="d-grid gap-2 d-md-flex justify-content-md-end">
-			<a class="btn md-end " style="background-color:#B1C695" href="<?= base_url(); ?>Kawin" role="button">Kembali</a>
-			<button type="submit" name="tambah" style="background-color:#5894C6" class="btn md-end text-white"> Simpan Data </button>
+			<a class="btn md-end " style="background-color:#B1C695" href="<?= base_url(); ?>Hamil" role="button">Kembali</a>
 		</div>
 		<!-- Penutup Card 1 -->
 	</div>

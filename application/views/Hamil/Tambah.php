@@ -114,30 +114,19 @@
 							<div class="row">
 								<div class="col-md-6">
 									<div class="mb-3 ">
-										<label for="Tanggal_Daftar">Tanggal Lahir</label>
+										<label for="Tanggal_Daftar">Tanggal Daftar</label>
 										<input type="date" class="form-control form-control-sm" name="Tanggal_Daftar" id="Tanggal_Daftar">
+										<small class="form-text text-danger"><?= form_error('Tanggal_Daftar') ?></small>
 									</div>
 								</div>
 								<!-- Umur -->
 								<div class="col-md-6">
 									<div class="mb-3">
-										<label for="Umur_Hamil_Daftar"> Umur</label>
+										<label for="Umur_Hamil_Daftar"> Umur Kehamilan</label>
 										<input type="text" name="Umur_Hamil_Daftar" class="form-control form-control-sm" id="Umur_Hamil_Daftar">
 										<small class="form-text text-danger"><?= form_error('Umur_Hamil_Daftar') ?></small>
 									</div>
 								</div>
-							</div>
-							<!-- Pendidikan -->
-							<div class="mb-3 ">
-								<label for="Pendidikan ">Pendidikan</label>
-								<input type="text" name="Pendidikan_Istri" class="form-control form-control-sm" id="Pendidikan_Istri">
-								<small class="form-text text-danger"><?= form_error('Pendidikan_Istri') ?></small>
-							</div>
-							<!-- Pekerjaan -->
-							<div class="mb-3">
-								<label for="Pekerjaan"> Pekerjaan</label>
-								<input type="text" name="Pekerjaan_Istri" class="form-control form-control-sm" id="Pekerjaan_Istri">
-								<small class="form-text text-danger"><?= form_error('Pekerjaan_Istri') ?></small>
 							</div>
 							<!-- Penutup Sub car 1 -->
 					</div>
@@ -152,24 +141,24 @@
 						<!-- Nama Suami -->
 						<div class="mb-3">
 							<label for="Alamat" class="form-label">Alamat</label>
-							<input type="text" class="form-control form-control-sm" name="Alamat_Istri" id="Alamat_Istri" readonly>
-							<small class="form-text text-danger"><?= form_error('Alamat_Istri') ?></small>
+							<input type="text" class="form-control form-control-sm" name="Alamat" id="Alamat" readonly>
+							<small class="form-text text-danger"><?= form_error('Alamat') ?></small>
 						</div>
 						<!-- RT -->
 						<div class="row">
 							<div class="col-md-6">
 								<div class="mb-3 ">
 									<label for="RT ">RT</label>
-									<input type="text" class="form-control form-control-sm" name="Rt_Istri" id="Rt_Istri" readonly>
-									<small class="form-text text-danger"><?= form_error('Rt_Istri') ?></small>
+									<input type="text" class="form-control form-control-sm" name="Rt" id="Rt" readonly>
+									<small class="form-text text-danger"><?= form_error('Rt') ?></small>
 								</div>
 							</div>
 							<!-- RW -->
 							<div class="col-md-6">
 								<div class="mb-3">
 									<label for="RW"> RW</label>
-									<input type="text" name="Rw_Istri" class="form-control form-control-sm" id="Rw_Istri" readonly>
-									<small class="form-text text-danger"><?= form_error('Rw_Istri') ?></small>
+									<input type="text" name="Rw" class="form-control form-control-sm" id="Rw" readonly>
+									<small class="form-text text-danger"><?= form_error('Rw') ?></small>
 								</div>
 							</div>
 						</div>
@@ -178,16 +167,16 @@
 							<div class="col-md-6">
 								<div class="mb-3 ">
 									<label for="Desa ">Desa</label>
-									<input type="text" class="form-control form-control-sm" name="Desa_Istri" id="Desa_Istri" readonly>
-									<small class="form-text text-danger"><?= form_error('Desa_Istri') ?></small>
+									<input type="text" class="form-control form-control-sm" name="Desa" id="Desa" readonly>
+									<small class="form-text text-danger"><?= form_error('Desa') ?></small>
 								</div>
 							</div>
 							<!-- Pekerjaan -->
 							<div class="col-md-6">
 								<div class="mb-3">
 									<label for="Kecamatan"> Kecamatan </label>
-									<input type="text" name="Kecamatan_Istri" class="form-control form-control-sm" id="Kecamatan_Istri" readonly>
-									<small class="form-text text-danger"><?= form_error('Kecamatan_Istri') ?></small>
+									<input type="text" name="Kecamatan" class="form-control form-control-sm" id="Kecamatan" readonly>
+									<small class="form-text text-danger"><?= form_error('Kecamatan') ?></small>
 								</div>
 							</div>
 						</div>
@@ -196,16 +185,16 @@
 							<div class="col-md-6">
 								<div class="mb-3 ">
 									<label for="Kabupaten ">Kabupaten/Kota</label>
-									<input type="text" class="form-control form-control-sm" name="Kabupaten_Istri" id="Kabupaten_Istri" readonly>
-									<small class="form-text text-danger"><?= form_error('Kabupaten_Istri') ?></small>
+									<input type="text" class="form-control form-control-sm" name="Kabupaten" id="Kabupaten" readonly>
+									<small class="form-text text-danger"><?= form_error('Kabupaten') ?></small>
 								</div>
 							</div>
 							<!-- Pekerjaan -->
 							<div class="col-md-6">
 								<div class="mb-3">
 									<label for="Provinsi"> Provinsi </label>
-									<input type="text" name="Provinsi_Istri" class="form-control form-control-sm" id="Provinsi_Istri" readonly>
-									<small class="form-text text-danger"><?= form_error('Provinsi_Istri') ?></small>
+									<input type="text" name="Provinsi" class="form-control form-control-sm" id="Provinsi" readonly>
+									<small class="form-text text-danger"><?= form_error('Provinsi') ?></small>
 								</div>
 							</div>
 						</div>
@@ -217,7 +206,7 @@
 		</div><br><br>
 		<!-- Button -->
 		<div class="d-grid gap-2 d-md-flex justify-content-md-end">
-			<a class="btn md-end " style="background-color:#B1C695" href="<?= base_url(); ?>Kawin" role="button">Kembali</a>
+			<a class="btn md-end " style="background-color:#B1C695" href="<?= base_url(); ?>Hamil" role="button">Kembali</a>
 			<button type="submit" name="tambah" style="background-color:#5894C6" class="btn md-end text-white"> Simpan Data </button>
 		</div>
 		<!-- Penutup Card 1 -->

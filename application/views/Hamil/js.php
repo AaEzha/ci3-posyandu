@@ -11,6 +11,13 @@
 			success: function(data) {
 				$('#Nama_Suami').val(data.Nama)
 				$('#Tanggal_Lahir_Suami').val(data.Tanggal_Lahir)
+				$('#Alamat').val(data.Alamat)
+				$('#Rt').val(data.Rt)
+				$('#Rw').val(data.Rw)
+				$('#Desa').val(data.Desa)
+				$('#Kecamatan').val(data.Kecamatan)
+				$('#Kabupaten').val(data.Kabupaten)
+				$('#Provinsi').val(data.Provinsi)
 			},
 			error: function(res) {
 				console.error(res.responseText);
